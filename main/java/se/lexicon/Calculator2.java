@@ -10,8 +10,8 @@ public class Calculator2 {
         System.out.println("Calculator");
         int num1;
         int num2;
-        int scanner;
-        boolean loop = true;
+        //int scanner;
+        //boolean loop = true;
         String operation;
 
 
@@ -59,10 +59,10 @@ public class Calculator2 {
         }
 
 
-
+            System.out.println("**************");
             System.out.println("Start? Press 5");
             System.out.println("Quit? Press 1");
-
+            System.out.println("**************");
             number = input.nextDouble();
             if (number == 5) {
                 continue;
