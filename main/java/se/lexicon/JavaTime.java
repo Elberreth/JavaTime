@@ -31,8 +31,7 @@ public class JavaTime {
         System.out.println("***********");
         System.out.println("This week");
         System.out.println("");
-        //boolean weekLoop = true;
-        //while (weekLoop);
+
 
         // Skapa ett datumobjekt från ett specifikt år, månad och dag
 

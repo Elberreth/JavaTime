@@ -18,17 +18,19 @@ public class JavaTime2 {
         LocalDate localDate = LocalDate.parse(dateString, formatter);
 
         // Print the LocalDate object
-        System.out.println("Parsed LocalDate: " + localDate);
+        System.out.println("Parsed LocalDate: " + localDate);{
+
+        }
 
 
 
 
-        LocalDate localDate2 = LocalDate.of(1945, 8, 5);
-        DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("yyyy-MM-dd ");
+        LocalDate localDate2 = LocalDate.of(1945, 11, 21);
+        DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+
+        System.out.println("On this day 1945 it was a " +  localDate2.getDayOfWeek() );
 
 
-        System.out.println("Back then  = " + localDate2 + localDate.getDayOfWeek ());
-        
 
 
 
