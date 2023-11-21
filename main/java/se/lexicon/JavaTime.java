@@ -35,16 +35,25 @@ public class JavaTime {
         //while (weekLoop);
 
         // Skapa ett datumobjekt från ett specifikt år, månad och dag
+
         LocalDate date2 = LocalDate.of(2023, 11, 21);
+
         // Hämta veckodagen för det datumet
+
         int dayOfWeek = date2.get(ChronoField.DAY_OF_WEEK);
+
         // Justera datumet till måndagen i samma vecka
+
         date2 = date2.minusDays(dayOfWeek - 1);
+
         // Skapa en array med veckodagarnas namn
-        String[] weekDays = {"Mån", "Tis", "Ons", "Tor", "Fre", "Lör", "Sön"};
+
+        String[] dayofWeek = {"Mån", "Tis", "Ons", "Tor", "Fre", "Lör", "Sön"};
+
         // Skriv ut veckodagarnas namn och datum
+
         for (int i = 0; i < 7; i++) {
-            System.out.print(weekDays[i] + ", ");
+            System.out.print(dayofWeek[i] + ", ");
             System.out.println(date2);
             // Lägg till en dag till datumet
             date2 = date2.plusDays(1);

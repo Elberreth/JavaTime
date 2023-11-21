@@ -3,6 +3,8 @@ package se.lexicon;
 import javax.print.DocFlavor;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoField;
+
 public class JavaTime2 {
     public static void main(String[] args) {
 
@@ -21,11 +23,16 @@ public class JavaTime2 {
 
 
 
-        String dateString2 = "1945-08-05";
-        DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-        LocalDate localDate2 = LocalDate.parse(dateString2,formatter2);
-        System.out.println("parsed localDate: " +localDate2);
+        LocalDate localDate2 = LocalDate.of(1945, 8, 5);
+        DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("yyyy-MM-dd ");
 
-    }
-}
+
+        System.out.println("Back then  = " + localDate2 + localDate.getDayOfWeek ());
+        
+
+
+
+
+
+    }}
 
