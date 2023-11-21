@@ -17,6 +17,15 @@ public class JavaTime2 {
 
         // Print the LocalDate object
         System.out.println("Parsed LocalDate: " + localDate);
+
+
+
+
+        String dateString2 = "1945-08-05";
+        DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        LocalDate localDate2 = LocalDate.parse(dateString2,formatter2);
+        System.out.println("parsed localDate: " +localDate2);
+
     }
 }
 
