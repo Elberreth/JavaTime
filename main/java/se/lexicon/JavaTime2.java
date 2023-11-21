@@ -27,7 +27,8 @@ public class JavaTime2 {
 
         LocalDate localDate2 = LocalDate.of(1945, 11, 21);
         DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-
+        System.out.println("********");
+        System.out.println("Fun Fact");
         System.out.println("On this day 1945 it was a " +  localDate2.getDayOfWeek() );
 
 
