@@ -9,7 +9,7 @@ public class JavaTime3 {
 
 
         public static void main(String[] args) {
-           
+
             LocalDate currentDate = LocalDate.now();
 
 
@@ -18,7 +18,7 @@ public class JavaTime3 {
 
             Month month = futureDate.getMonth();
             System.out.println("Month: " + month);
-            System.out.println("This day 10 years from now - 10 months");
+            System.out.println("This month 10 years from now - 10 months");
         }
     }
 
