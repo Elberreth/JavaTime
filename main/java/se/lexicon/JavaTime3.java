@@ -5,6 +5,8 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.Month;
 import java.time.Period;
+import java.time.format.DateTimeFormatter;
+
 public class JavaTime3 {
 //public class TimeExample {
 
@@ -55,7 +57,11 @@ public static void currentTime3()
         {
             LocalTime currentTime3 = LocalTime.now();
             System.out.println("***********");
-            System.out.println("CurrentTime = " + currentTime3);
+            System.out.println("Task 9 below :)");
+            System.out.println("***********");
+            System.out.println("Time now");
+            System.out.println(currentTime3.format(DateTimeFormatter.ofPattern("H:m")));
+            //System.out.println("CurrentTime = " + currentTime3);
             System.out.println("***********");
 
 
