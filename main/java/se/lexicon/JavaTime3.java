@@ -60,7 +60,7 @@ public static void currentTime3() {
     System.out.println("Task 9 below :)");
     System.out.println("***********");
     System.out.println("Time now");
-    System.out.println(currentTime3.format(DateTimeFormatter.ofPattern("H:m")));
+    System.out.println(currentTime3.format(DateTimeFormatter.ofPattern("H:mm")));
     System.out.println("***********");
 }
 
