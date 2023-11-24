@@ -14,6 +14,7 @@ public class JavaTime3 {
     public static void main(String[] args) {
 
         currentTime3();
+        nanoSeconds();
 
         System.out.println("Task 6");
         System.out.println("*********");
@@ -53,16 +54,26 @@ public class JavaTime3 {
     }
 
 
-public static void currentTime3()
-        {
-            LocalTime currentTime3 = LocalTime.now();
-            System.out.println("***********");
-            System.out.println("Task 9 below :)");
-            System.out.println("***********");
-            System.out.println("Time now");
-            System.out.println(currentTime3.format(DateTimeFormatter.ofPattern("H:m")));
-            //System.out.println("CurrentTime = " + currentTime3);
-            System.out.println("***********");
+public static void currentTime3() {
+    LocalTime currentTime3 = LocalTime.now();
+    System.out.println("***********");
+    System.out.println("Task 9 below :)");
+    System.out.println("***********");
+    System.out.println("Time now");
+    System.out.println(currentTime3.format(DateTimeFormatter.ofPattern("H:m")));
+    System.out.println("***********");
+}
 
 
-        }}
+static void nanoSeconds(){
+    System.out.println("task 10");
+    System.out.println("NanoSeconds");
+        LocalTime nanoSeconds = LocalTime.now();
+
+
+    System.out.println( nanoSeconds.format(DateTimeFormatter.ofPattern("n")));
+    System.out.println("***********");
+    }
+
+
+        }
