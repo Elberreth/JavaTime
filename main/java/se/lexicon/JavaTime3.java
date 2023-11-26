@@ -15,9 +15,11 @@ public class JavaTime3 {
 
         currentTime3();
         nanoSeconds();
+        timeString();
 
         System.out.println("Task 6");
         System.out.println("*********");
+
 
 
         LocalDate currentDate = LocalDate.now();
@@ -30,6 +32,10 @@ public class JavaTime3 {
         System.out.println("Month: " + month);
         System.out.println("This month 10 years from now - 10 months");
         System.out.println("");
+        
+
+
+
         System.out.println("Task 7 ");
         System.out.println("*************");
 
@@ -75,5 +81,20 @@ static void nanoSeconds(){
     System.out.println("***********");
     }
 
+    static void timeString(){
+        System.out.println("Task 11");
+        System.out.println("********");
+        String timeString = "15:30:45";
 
-        }
+
+
+    // Create a DateTimeFormatter to parse the String
+    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
+
+    // Parse the String and create a LocalTime object
+    LocalTime parsedTime = LocalTime.parse(timeString, formatter);
+
+    // Print the parsed LocalTime
+        System.out.println("Parsed Time: " + parsedTime);
+
+        }}
