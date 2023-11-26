@@ -17,49 +17,41 @@ public class JavaTime3 {
         nanoSeconds();
         timeString();
         currentTime4();
-
-        System.out.println("Task 6");
-        System.out.println("");
-
-
-
-        LocalDate currentDate = LocalDate.now();
-
-
-        LocalDate futureDate = currentDate.plusYears(10).minusMonths(10);
-
-
-        Month month = futureDate.getMonth();
-        System.out.println("Month: " + month);
-        System.out.println("This month 10 years from now - 10 months");
-        System.out.println("");
+        currentDate2();
+        currentDate3();
 
 
 
 
-        System.out.println("Task 7 ");
-        System.out.println("");
 
 
-        LocalDate currentDate2 = LocalDate.of(1974, 3, 26);
-
-        Period period = Period.between(currentDate2, currentDate);
 
 
-        int elapsedYears = period.getYears();
-        int elapsedMonths = period.getMonths();
-        int elapsedDays = period.getDays();
 
-        System.out.println("Since my birthday:");
-        System.out.println("Elapsed Years: " + elapsedYears);
-        System.out.println("Elapsed Months: " + elapsedMonths);
-        System.out.println("Elapsed Days: " + elapsedDays);
+
 
 
         //cant understand Ex8 at the moment so ex9
 
     }
+public static void currentDate2(){
+    System.out.println("Task 7");
 
+        LocalDate currentDate = LocalDate.of(1974, 3, 26);
+        LocalDate currentDate2 = currentDate.now();
+    Period period = Period.between(currentDate, currentDate2);
+
+
+    int elapsedYears = period.getYears();
+    int elapsedMonths = period.getMonths();
+    int elapsedDays = period.getDays();
+
+    System.out.println("Since my birthday:");
+    System.out.println("Elapsed Years: " + elapsedYears);
+    System.out.println("Elapsed Months: " + elapsedMonths);
+    System.out.println("Elapsed Days: " + elapsedDays);
+    System.out.println("");
+    }
 
 public static void currentTime3() {
     LocalTime currentTime3 = LocalTime.now();
@@ -98,16 +90,33 @@ static void nanoSeconds(){
         // Print the parsed LocalTime
         System.out.println("Parsed Time: " + parsedTime);
     }
-        public static void currentTime4(){
+        public static void currentTime4() {
             System.out.println("");
-        System.out.println("Task 12 Current time");
+            System.out.println("Task 12 Current time");
             System.out.println("");
             LocalTime currentTime4 = LocalTime.now();
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
             System.out.println(currentTime4.format(DateTimeFormatter.ofPattern("H:mm")));
             System.out.println("");
 
+        }
+    public static void currentDate3(){
+                System.out.println("Task 6");
+                System.out.println("");
+
+
+
+                LocalDate currentDate3 = LocalDate.now();
+
+
+                LocalDate futureDate = currentDate3.plusYears(10).minusMonths(10);
+
+
+                Month month = futureDate.getMonth();
+                System.out.println("Month: " + month);
+                System.out.println("This month 10 years from now - 10 months");
+                System.out.println("");
+            }
     }
 
 
-        }
