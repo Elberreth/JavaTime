@@ -1,10 +1,7 @@
 package se.lexicon;
 
 
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.time.Month;
-import java.time.Period;
+import java.time.*;
 import java.time.format.DateTimeFormatter;
 
 public class JavaTime3 {
@@ -20,7 +17,7 @@ public class JavaTime3 {
         currentDate2();
         currentDate3();
 
-
+        currentDate4();
 
 
 
@@ -116,7 +113,24 @@ static void nanoSeconds(){
                 System.out.println("Month: " + month);
                 System.out.println("This month 10 years from now - 10 months");
                 System.out.println("");
-            }
+
+
+
+
+    }
+
+public static void currentDate4(){
+    System.out.println("");
+    System.out.println("Task 13");
+    LocalTime localTime3 = LocalTime.now();
+
+    LocalDate localDate2 = LocalDate.now();
+
+    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH mm ss");
+    System.out.println("localDate = " + localDate2 + " " + localTime3);
+}
+
+
     }
 
 
